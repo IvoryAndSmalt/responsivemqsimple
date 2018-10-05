@@ -1,0 +1,176 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container{
+    background: lightgrey;
+    display:flex;
+    padding-left: 2%;
+    padding-right: 2%;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+.carte{
+    display: flex;
+    margin: 0 1.5vh;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    flex-direction: column;
+}
+
+.image{
+    width: 100%;
+    height: auto;
+}
+
+.cartetexte{
+    display: flex;
+    flex-direction: row;
+    background: white;
+    width: auto;
+    padding-top: 8%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.cartetexte:nth-child(3) {
+    flex-basis: 100%;
+}
+
+.cartetexte h1{
+    display: flex;
+    font-size: 1.4em;
+    font-weight: lighter;
+    width: 50%;
+    margin-bottom: 3%;
+}
+
+a{
+    width: 40%;
+    margin-right: 3%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5em;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.link{
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 1.2em;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 480px) {
+    .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .carte{
+        width: 44%;
+    }
+    .image{
+        height: auto;
+    }
+}
+
+
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 900px) {
+    .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .carte{
+        width: 30%;
+    }
+    .image{
+        height: auto;
+    }
+    .carte{
+        flex-wrap: wrap;
+    }
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 1440px) {
+    .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .carte{
+        width: 22%;
+    }
+    .image{
+        height: auto;
+    }
+    .carte{
+        flex-wrap: wrap;
+    }
+
+}
+
